@@ -5,9 +5,9 @@ public class Director {
     private int numOfMovies;
     private double imdbRating;
 
-    Director(){}
+    public Director(){}
 
-    Director(String name,int numOfMovies, double imdbRating){
+    public Director(String name,int numOfMovies, double imdbRating){
         this.name = name;
         this.numOfMovies = numOfMovies;
         this.imdbRating = imdbRating;

@@ -1,4 +1,4 @@
-package com.driver.Controller;
+package com.driver;
 
 import com.driver.Movie;
 import com.driver.Services.MovieService;
