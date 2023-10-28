@@ -1,9 +1,11 @@
 package com.driver.Repositries;
 
-import com.driver.Models.Movie;
+import com.driver.Movie;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 
+@Repository
 public class MovieRepository {
     private HashMap<String,Movie> movieDb;
 
