@@ -5,6 +5,9 @@ import com.driver.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class MovieService {
     @Autowired
@@ -26,6 +29,25 @@ public class MovieService {
         return movieRepository.getDirector(name);
     }
 
+    public void directorMoviePair(String movieName,String directorName){
+        movieRepository.directorMoviePair(movieName,directorName);
+    }
+
+    public List<String> getMoviesByDirectorName(String directorName){
+        return movieRepository.getMoviesByDirectorName(directorName);
+    }
+
+    public List<String> findAllMovies (){
+        return movieRepository.findAllMovies();
+    }
+
+    public void deleteDirectorByName (String name){
+        movieRepository.deleteDirectorByName(name);
+    }
+
+    public void deleteAllDirectors(){
+        movieRepository.deleteAllDirectors();
+    }
 
 
 }
